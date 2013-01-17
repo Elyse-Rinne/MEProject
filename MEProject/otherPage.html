@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- i'm using bootstrap to make it look pretty :) (http://twitter.github.com/bootstrap/base-css.html) -->
+	<!-- put all style sheets in the header"> -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" />
+	<div class="row-fluid hero-unit">
+		<h1>Awesome Pictures&nbsp;<small>of awesome stuff</small></h1>
+	</div>
+</head>
+<body>
+	<div class="span21">
+		<ul class="thumbnails">
+			<li class="span4">
+				<a class="thumbnail" href="#"><img data-src="holder.js/360x270" src="pics/HeloAndAisha.jpg" /></a>
+				<h3>It's a Miracle!</h3>
+				<p>Maybe a once in a lifetime occurance.</p>
+			</li>
+			<li class="span6">
+				<a class="thumbnail" href="#"><img data-src="holder.js/360x270" src="pics/HeloAndMe.jpg" /></a>
+			</li>
+			<li class="span4">
+				<a class="thumbnail" href="#"><img data-src="holder.js/260x120" src="pics/HeloLap.jpg" /></a>
+			</li>
+			<li class="span3">
+				<a class="thumbnail" href="#"><img data-src="holder.js/100X120" src="pics/Me.jpg" /></a>
+			</li>
+			<li class="span3">
+				<a class="thumbnail" href="#"><img data-src="holder.js/260x120" src="pics/ireallydo.png" /></a>
+			</li>
+			<li class="span3">
+				<a class="thumbnail" href="#"><img data-src="holder.js/160X120" src="pics/appropriate.png" /></a>
+			</li>
+		</ul>
+	</div>
+<!--
+Always put jscript at the bottom of the page (when possible)
+An HTML page loads top to bottom, so you want to render the
+visual objects before your script
+
+if you want to see this in action, use firefox and download firebug
+you can put break points in the jscript/jquery in the 'script' tab
+-->
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="scripts/holder.js"></script>
+</body>
+</html>
