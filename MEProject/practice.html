@@ -36,6 +36,15 @@
 			<a onclick="changeText()" name="moloveBtn" id="moloveBtn" class="btn btn-primary"><i class="icon-question-sign icon-white"></i>&nbsp;&nbsp;More Love</a>
 		</div>
 	</div>
+	
+	<div class = "well span2">
+		<div class="row-fluid">
+			<a onclick="changeText()" name="fgBtn" id="fgBtn" class ="btn btn-primary">Feeling down?</a>
+			<div id="fgMsg" class="alert alert-success hide span10">
+				
+			</div>
+		</div>
+	</div>
 <!--
 Always put jscript at the bottom of the page (when possible)
 An HTML page loads top to bottom, so you want to render the
@@ -48,6 +57,9 @@ you can put break points in the jscript/jquery in the 'script' tab
     <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
 	<script>
 		var count = 1;
+		feelGoods = new Array("I love you!", "You are beautiful!", "I'll do anything for you!", "You're perfect!",
+								"You're the sexiest", "I want you to have my babies!", "Matthew+Elyse4LYFE!");
+		
 		// i'm using jquery here, not javascript (http://api.jquery.com/)
 		// check out this page to understand the 'selectors' i'm using (http://api.jquery.com/category/selectors/)
 		$(document).ready(function () {
@@ -65,6 +77,11 @@ you can put break points in the jscript/jquery in the 'script' tab
 			});
 			$('#moloveBtn').click(function(){
 				$('#moloveMsg').toggle();
+			});
+			$('#fgBtn').click(function(){
+				var ranMsg = feelGoods[Math.floor(Math.random()*feelGoods.length)];
+				$('#fgMsg').toggle();
+				$('#fgMsg').text(ranMsg);
 			});
 		});
 		
