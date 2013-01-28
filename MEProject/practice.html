@@ -5,43 +5,47 @@
 	<!-- put all style sheets in the header"> -->
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" />
-	<div class="row-fluid">
-		<div class="span8">	
+		<div class="row-fluid">	
 			<h1>THIS IS THE MOST AWESOME WEBSITE EVER</h1>
 		</div>
-		<div class="span4">	
-			<div id="loveAlert" class="alert alert-info hide fade in span10">
-				<i class="icon-heart"></i>&nbsp;&nbsp;Elyse Loves Matthew, Always!<a class="btn btn-mini btn-primary pull-right" href="otherPage.html" id="otherPageBtn"><i class="icon-star-empty icon-white"></i></a>
+</head>
+<body>
+	<div class="span10">
+		<div class="well span4">
+				<script>
+					document.write("Hey there!");
+				</script>
+			<div class="row-fluid">
+				<a onclick="changeText()" name="mysteryBtn" id="mysteryBtn" class="btn btn-primary"><i class="icon-question-sign icon-white"></i>&nbsp;&nbsp;Love Button</a>
+				<a onclick="changeText()" name="moloveBtn" id="moloveBtn" class="btn btn-primary"><i class="icon-question-sign icon-white"></i>&nbsp;&nbsp;More Love</a>
 			</div>
 		</div>
-		<div class="span4">
+		<div align="center" class = "well span3">
 			<div class="row-fluid">
-				<div id="moloveMsg" class="alert alert-success hide span10">
-					Matthew Loves Elyse, EVEN MOAR! <i class="icon-heart"></i>
+				<a onclick="changeText()" name="fgBtn" id="fgBtn" class ="btn btn-primary">Feeling down?</a>
+				<br /><br />
+				<div id="fgMsg" class="alert alert-success hide span10">
+				<!--You can keep clicking this badboy-->	
 				</div>
 			</div>
 		</div>
-	</div>
-</head>
-<body>
-	<div class="well span4">
-		<div class="row-fluid">
-			<script>
-				document.write("Hey there!");
-			</script>
-		</div>
-		<br />
-		<div class="row-fluid">
-			<a onclick="changeText()" name="mysteryBtn" id="mysteryBtn" class="btn btn-primary"><i class="icon-question-sign icon-white"></i>&nbsp;&nbsp;Love Button</a>
-			<a onclick="changeText()" name="moloveBtn" id="moloveBtn" class="btn btn-primary"><i class="icon-question-sign icon-white"></i>&nbsp;&nbsp;More Love</a>
+		<div class="row-fluid span21">
+			<a href="anotherPage.html" class="btn btn-warning btn-large">BIG BUTTON</a> 
 		</div>
 	</div>
-	
-	<div align="center" class = "well span3">
+	<div class="span6">
 		<div class="row-fluid">
-			<a onclick="changeText()" name="fgBtn" id="fgBtn" class ="btn btn-primary">Feeling down?</a>
-			<div id="fgMsg" class="alert alert-success hide span10">
-			<!--You can keep clicking this badboy-->	
+			<div class="span4">	
+				<div id="loveAlert" class="alert alert-info hide fade in span10">
+					<i class="icon-heart"></i>&nbsp;&nbsp;Elyse Loves Matthew, Always!<a class="btn btn-mini btn-primary pull-right" href="otherPage.html" id="otherPageBtn"><i class="icon-star-empty icon-white"></i></a>
+				</div>
+			</div>
+			<div class="span4">
+				<div class="row-fluid">
+					<div id="moloveMsg" class="alert alert-success hide span10">
+						Matthew Loves Elyse, EVEN MOAR! <i class="icon-heart"></i>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
